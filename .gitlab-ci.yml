@@ -5,8 +5,6 @@ deploy:
   image: python:latest
   only: [master]
   stage: deploy
-  dependencies: 
-    - build
   script:
   - pip install awscli
   - aws s3 cp ./*.js ./*.html ./*.css s3://snake.ahouts.com/ --recursive
