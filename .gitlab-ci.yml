@@ -1,0 +1,13 @@
+stages:
+  - deploy
+
+deploy:
+  image: python:latest
+  only: [master]
+  stage: deploy
+  dependencies: 
+    - build
+  script:
+  - pip install awscli
+  - aws s3 cp ./ s3://snake.ahouts.com/ --recursive
+  - aws cloudfront create-invalidation --distribution-id E2XHP9ZZZDCQ3W --paths '/*'
