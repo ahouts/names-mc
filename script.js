@@ -54,7 +54,22 @@ const ADJ_LIST = [
     "Malleable",
     "Massachusetts",
     "Isometric",
-    "Bloody"
+    "Bloody",
+    "Cute",
+    "Cryptic",
+    "Mysterious",
+    "Egotistical",
+    "Terrific",
+    "Unwise",
+    "Spanish",
+    "Unfortunate",
+    "Zesty",
+    "Forgettable",
+    "Stupendous",
+    "Magical",
+    "Buxom",
+    "Plagiarised",
+    "Troublesome"
 ];
 
 const NOUN_LIST = [
@@ -96,7 +111,17 @@ const NOUN_LIST = [
     "Backpack",
     "Insomniac",
     "Exercise",
-    "Wanker"
+    "Wanker",
+    "Barnacle",
+    "Boy",
+    "Girl",
+    "Man",
+    "Woman",
+    "Dude",
+    "Dudette",
+    "Mushroom",
+    "Duolingo",
+    "Captain"
 ];
 
 function generateName() {
